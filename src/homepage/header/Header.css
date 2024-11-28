@@ -1,43 +1,23 @@
+/* Gradient color palette */
+:root {
+  --gradient-start: #A3C9E2;
+  --gradient-end: #9618f7;
+}
+
 .header {
-    background-color: #fff;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    margin-right: 20px;
-    width: 30px; /* Adjust size as needed */
-    height: 30px;
-  }
-  
-  .search-bar {
-    flex-grow: 1;
-    height: 36px;
-    border: 1px solid #d9d9d9;
-    border-radius: 20px;
-    padding: 0 12px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-bar input {
-    flex-grow: 1;
-    height: 100%;
-    border: none;
-    outline: none;
-    font-size: 16px;
-  }
-  
-  .search-bar button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
-  
-  .search-bar img {
-    width: 20px; /* Adjust size as needed */
-    height: 20px;
-  }
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: #F0F8FF; /* Darker complementary color for text */
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}
