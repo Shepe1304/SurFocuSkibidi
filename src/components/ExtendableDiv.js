@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ExtendableDiv.css";
-import gif from "../assets/gifs/1.gif";
+import gif from "../assets/gifs/2.gif";
 
 const ExtendableDiv = (props) => {
   const [brainrot, setBrainrot] = useState(false);

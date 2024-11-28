@@ -2,7 +2,7 @@
   background-color: darkcyan;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 20%;
   height: 100vh;
 }
 
@@ -22,11 +22,11 @@
 }
 
 .extendableDiv--contract {
-  height: 50%;
+  height: 40%;
 }
 
 .extendableDiv--brainrot {
-  height: 50%;
+  height: 60%;
   overflow: hidden;
 }
 
