@@ -1,0 +1,37 @@
+.extendableDiv {
+  background-color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100vh;
+}
+
+.extendableDiv button {
+  height: 5%;
+}
+
+.extendableDiv--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95%;
+}
+
+.extendableDiv--text {
+  overflow: auto;
+}
+
+.extendableDiv--contract {
+  height: 40%;
+}
+
+.extendableDiv--brainrot {
+  height: 60%;
+  overflow: hidden;
+}
+
+.extendableDiv--brainrot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
