@@ -5,7 +5,7 @@ import SpeakText from './components/SpeakText';
 import React, {useState} from 'react';
 
 function App() {
-  const [textToSpeak, setTextToSpeak] = useState("Hello, this is a test.");
+  const [textToSpeak, setTextToSpeak] = useState("Dit me may Minh Tam.");
 
   const handleInputChange = (event) => {
     setTextToSpeak(event.target.value);
