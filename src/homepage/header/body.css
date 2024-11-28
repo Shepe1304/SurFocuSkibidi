@@ -1,0 +1,39 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 60vh;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: #F0F8FF;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.joke {
+  font-size: 1.8rem;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.arrow {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #F0F8FF;
+  cursor: pointer;
+  padding: 20px;
+  position: absolute;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
