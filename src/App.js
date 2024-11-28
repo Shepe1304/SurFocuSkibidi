@@ -1,10 +1,11 @@
 import './App.css';
-import ExtendableDiv from './components/ExtendableDiv';
+import Header from './homepage/header/Header';
+
 
 function App() {
   return (
     <div className="App">
-     <ExtendableDiv />
+     <Header />
     </div>
   );
 }
