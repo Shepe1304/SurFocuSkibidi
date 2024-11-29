@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import Header from './homepage/header/Header';
-import Footer from './homepage/footer/Footer';
+import Header from './homepage/Header/Header';
+import Footer from './homepage/Footer/Footer';
 import Body from './homepage/Header/body';
 import SpeakText from './components/SpeakText';
 
