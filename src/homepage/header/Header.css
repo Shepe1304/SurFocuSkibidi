@@ -1,0 +1,23 @@
+/* Gradient color palette */
+:root {
+  --gradient-start: #A3C9E2;
+  --gradient-end: #9618f7;
+}
+
+.header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: #F0F8FF; /* Darker complementary color for text */
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}

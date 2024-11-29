@@ -1,20 +1,13 @@
-import React from 'react';
-import './Header.css'; // Import your CSS file
+import React from "react";
+import "./Header.css";
 
-function Header() {
+const Header = () => {
   return (
     <header className="header">
-      <img src="brain.gif" alt="Brainrot" className="brainrot" />
-      <h1>My Website</h1>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
+      <h1 className="title">DAD JOKE</h1>
+      <p className="subtitle">Want to hear a joke?</p>
     </header>
   );
-}
+};
 
 export default Header;
