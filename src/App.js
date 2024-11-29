@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ExtendableDiv text={"AP protein"} />
-      {/* <div>
-        <input type="text" value={textToSpeak} onChange={handleInputChange} />
-        <button onClick={handleSpeak}>Speak</button>
-      </div> */}
+      <ExtendableDiv
+        text={
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque officia incidunt adipisci tempora inventore nostrum magnam veritatis consequatur aliquam, tenetur optio quis magni iusto possimus voluptatem fugit sequi vitae."
+        }
+      />
       <Footer />
     </div>
   );
