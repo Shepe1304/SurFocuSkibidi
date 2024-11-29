@@ -1,15 +1,27 @@
 import React, { useState } from "react";
 import "./ExtendableDiv.css";
+import SpeakText from "../components/SpeakText";
 import gif from "../assets/gifs/2.gif";
 
 const ExtendableDiv = (props) => {
   const [brainrot, setBrainrot] = useState(false);
+
+  // const [textToSpeak, setTextToSpeak] = useState("Dit me may Minh Tam.");
+
+  // const handleInputChange = (event) => {
+  //   setTextToSpeak(event.target.value);
+  // };
+
+  const handleSpeak = () => {
+    SpeakText(props.text);
+  };
 
   return (
     <div className="extendableDiv">
       <button
         onClick={() => {
           setBrainrot(!brainrot);
+          handleSpeak();
         }}
       >
         HELP ME FOCUS!
