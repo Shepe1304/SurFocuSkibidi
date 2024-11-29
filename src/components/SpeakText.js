@@ -8,7 +8,7 @@ export default function SpeakText(text) {
         // window object is the global object in JavaScript
       const utterance = new SpeechSynthesisUtterance(text); //create object because we can edit it properties (lang, voice, volume,..) 
       let voices = window.speechSynthesis.getVoices(); //get the voices from the browser
-        utterance.voice = voices[3]; //get the voice from the array of voices
+        utterance.voice = voices[0]; //get the voice from the array of voices
         window.speechSynthesis.speak(utterance);
     } else  
     {
