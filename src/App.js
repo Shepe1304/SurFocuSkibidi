@@ -4,9 +4,10 @@ import Header from './homepage/Header/Header';
 import Footer from './homepage/Footer/Footer';
 import Body from './homepage/Header/body';
 import SpeakText from './components/SpeakText';
+import ExtendableDiv from './components/ExtendableDiv';
 
 function App() {
-  const [textToSpeak, setTextToSpeak] = useState("Hello, world!");
+  const [textToSpeak, setTextToSpeak] = useState("hello ban Khang");
 
   const handleInputChange = (event) => {
     setTextToSpeak(event.target.value);
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
       <Header />
       <Body />
+      <ExtendableDiv text={'hello ban Khang'}/>
       <div>
         <input
           type="text"
