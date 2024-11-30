@@ -1,3 +1,30 @@
 * {
   transition: all 0.15s;
 }
+
+.App--container {
+  display: flex;
+  position: relative;
+}
+
+.App {
+  width: 100%;
+}
+
+.App--brainrot_resize {
+  max-width: 70%;
+}
+
+.App--brainrot {
+  /* width: 50%; */
+  height: 100%;
+  max-width: 30%;
+  right: 0;
+  position: fixed;
+}
+
+.App--brainrot img {
+  width: 30vw;
+  height: 100vh;
+  object-fit: cover;
+}
