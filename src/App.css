@@ -11,6 +11,30 @@
   width: 100%;
 }
 
+.App--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.App--open_brainrot {
+  min-height: 1em;
+  border: none;
+  font-weight: bold;
+  background-color: rgb(255, 0, 43);
+  padding: 0.75em;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+  border: 5px solid black;
+}
+
+.App--open_brainrot:hover {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+}
+
 .App--jokes {
   display: flex;
 }
@@ -31,4 +55,36 @@
   width: 30vw;
   height: 100vh;
   object-fit: cover;
+}
+
+.App--before,
+.App--next {
+  width: 5em;
+  height: 5em;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.App--before:hover,
+.App--next:hover {
+  width: 6em;
+  height: 6em;
+}
+
+.App--before:hover {
+  margin-right: -1em;
+}
+
+.App--next:hover {
+  margin-left: -1em;
+}
+
+.App--before img,
+.App--next img {
+  width: 100%;
+  height: 100%;
+}
+
+.App--next img {
+  transform: scaleX(-1);
 }

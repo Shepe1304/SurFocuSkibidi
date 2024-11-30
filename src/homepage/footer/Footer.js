@@ -9,6 +9,7 @@ function Footer() {
   const handleButtonClick = () => {
     setButtonText(text => text === "mitSub" ? "Submit": "mitSub");
   }
+  
   return (
     <footer className = "footer">
       <div className = "footer-content">

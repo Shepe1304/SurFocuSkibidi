@@ -5,6 +5,7 @@ import Header from "./homepage/header/Header";
 import Footer from "./homepage/footer/Footer";
 import { gifList } from "./assets/GifList";
 import { jokes } from "./assets/Jokes";
+import leftArrow from "./assets/images/leftArrow.png";
 
 function App() {
   const [brainrot, setBrainrot] = useState(false);
@@ -14,36 +15,47 @@ function App() {
   return (
     <div className="App--container">
       <div className={`App ${brainrot ? "App--brainrot_resize" : ""}`}>
-        <button
-          onClick={() => {
-            setBrainrot(!brainrot);
-            setRandomizedVideo(Math.floor(Math.random() * gifList.length));
-          }}
-        >
-          {!brainrot ? "HELP ME FOCUS!" : "STOP ITTT"}
-        </button>
+        <div className="App--button">
+          <button
+            onClick={() => {
+              setBrainrot(!brainrot);
+              setRandomizedVideo(Math.floor(Math.random() * gifList.length));
+            }}
+            className="App--open_brainrot"
+          >
+            {!brainrot ? "CLICK ME TO FOCUS!" : "STOP FOCUSING"}
+          </button>
+        </div>
         <Header />
         <div className="App--jokes">
           {/* {jokes.map((joke) => {
             return <ExtendableDiv text={joke.content} />;
           })} */}
-          <button
+          <div
             onClick={() => {
-              setJokeId((jokeId - 1 + jokes.length) % (jokes.length - 2));
+              setJokeId((jokeId - 3 + jokes.length) % jokes.length);
             }}
+            className="App--before"
           >
-            {"<=="}
-          </button>
-          <ExtendableDiv text={jokes[jokeId].content} />
-          <ExtendableDiv text={jokes[jokeId + 1].content} />
-          <ExtendableDiv text={jokes[jokeId + 2].content} />
-          <button
+            <img src={leftArrow} alt="Arrow Left" />
+          </div>
+          <ExtendableDiv text={jokes[jokeId].content} id={jokes[jokeId].id} />
+          <ExtendableDiv
+            text={jokes[(jokeId + 1) % jokes.length].content}
+            id={jokes[(jokeId + 1) % jokes.length].id}
+          />
+          <ExtendableDiv
+            text={jokes[(jokeId + 2) % jokes.length].content}
+            id={jokes[(jokeId + 2) % jokes.length].id}
+          />
+          <div
             onClick={() => {
-              setJokeId((jokeId + 1) % (jokes.length - 2));
+              setJokeId((jokeId + 3) % jokes.length);
             }}
+            className="App--next"
           >
-            {"==>"}
-          </button>
+            <img src={leftArrow} alt="Arrow Right" />
+          </div>
         </div>
         <Footer />
       </div>

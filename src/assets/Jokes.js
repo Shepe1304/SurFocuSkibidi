@@ -56,4 +56,50 @@ export const jokes = [
     content:
       "I bought a banana, but I think it’s going bad. It’s feeling a bit peel-ish!",
   },
+  {
+    id: 11,
+    created_at: "2024-11-30T00:00:00Z",
+    content: "Why is Peter Pan always flying? Cause he Neverlands.",
+  },
+  {
+    id: 12,
+    created_at: "2024-11-30T00:00:00Z",
+    content:
+      "A girl walked up to me and said Hi, I'm Tiina with two 'i's. I replied Hey, I'm Steve with two ears.",
+  },
+  {
+    id: 13,
+    created_at: "2024-11-30T00:00:00Z",
+    content: "What do you call a sad cup of coffee? Depresso.",
+  },
+  {
+    id: 14,
+    created_at: "2024-11-30T00:00:00Z",
+    content:
+      "A man just assaulted me with milk, butter, and cheese. How dairy!",
+  },
+  {
+    id: 15,
+    created_at: "2024-11-30T00:00:00Z",
+    content:
+      "I made a graph of my past relationships. It's got an ex-axis and a why-axis.",
+  },
+  {
+    id: 16,
+    created_at: "2024-11-30T00:00:00Z",
+    content:
+      "I have a step ladder at home. My real ladder left to buy cigarettes and never came back.",
+  },
+  {
+    id: 17,
+    created_at: "2024-11-30T10:35:00Z",
+    content:
+      "Why did the bus driver lose his job after giving his seat to a blind person? Because he was the bus driver.",
+  },
+  {
+    id: 18,
+    created_at: "2024-11-30T10:50:00Z",
+    content:
+      "What do you call a joke that's dead? That can’t possibly be... It's been dead for 20 minutes.",
+  },
 ];
