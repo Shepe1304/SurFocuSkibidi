@@ -35,9 +35,14 @@ const ExtendableDiv = (props) => {
           {!brainrot ? "HELP ME FOCUS!" : "STOP READINGGG"}
         </button>
         {brainrot ? (
-          <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
-            <button>MORE DETAILS!!!</button>
-          </a>
+          <>
+            {/* <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+              <button>MORE DETAILS!!!</button>
+            </a> */}
+            <a href="https://youtu.be/2qBlE2-WL60" target="_blank">
+              <button>MORE DETAILS!!!</button>
+            </a>
+          </>
         ) : null}
       </div>
       <div className={`extendableDiv--content`}>
