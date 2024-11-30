@@ -4,10 +4,12 @@ import React, { useState } from "react";
 import Header from "./homepage/header/Header";
 import Footer from "./homepage/footer/Footer";
 import { gifList } from "./assets/GifList";
+import { jokes } from "./assets/Jokes";
 
 function App() {
   const [brainrot, setBrainrot] = useState(false);
   const [randomizedVideo, setRandomizedVideo] = useState(0);
+  const [jokeId, setJokeId] = useState(0);
 
   return (
     <div className="App--container">
@@ -21,11 +23,28 @@ function App() {
           {!brainrot ? "HELP ME FOCUS!" : "STOP ITTT"}
         </button>
         <Header />
-        <ExtendableDiv
-          text={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque officia incidunt adipisci tempora inventore nostrum magnam veritatis consequatur aliquam, tenetur optio quis magni iusto possimus voluptatem fugit sequi vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque officia incidunt adipisci tempora inventore nostrum magnam veritatis consequatur aliquam, tenetur optio quis magni iusto possimus voluptatem fugit sequi vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque officia incidunt adipisci tempora inventore nostrum magnam veritatis consequatur aliquam, tenetur optio quis magni iusto possimus voluptatem fugit sequi vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque officia incidunt adipisci tempora inventore nostrum magnam veritatis consequatur aliquam, tenetur optio quis magni iusto possimus voluptatem fugit sequi vitae."
-          }
-        />
+        <div className="App--jokes">
+          {/* {jokes.map((joke) => {
+            return <ExtendableDiv text={joke.content} />;
+          })} */}
+          <button
+            onClick={() => {
+              setJokeId((jokeId - 1 + jokes.length) % (jokes.length - 2));
+            }}
+          >
+            {"<=="}
+          </button>
+          <ExtendableDiv text={jokes[jokeId].content} />
+          <ExtendableDiv text={jokes[jokeId + 1].content} />
+          <ExtendableDiv text={jokes[jokeId + 2].content} />
+          <button
+            onClick={() => {
+              setJokeId((jokeId + 1) % (jokes.length - 2));
+            }}
+          >
+            {"==>"}
+          </button>
+        </div>
         <Footer />
       </div>
       {brainrot ? (

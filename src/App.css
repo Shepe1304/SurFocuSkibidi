@@ -11,6 +11,10 @@
   width: 100%;
 }
 
+.App--jokes {
+  display: flex;
+}
+
 .App--brainrot_resize {
   max-width: 70%;
 }
