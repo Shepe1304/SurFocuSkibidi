@@ -6,6 +6,7 @@
   max-width: 300px;
   aspect-ratio: 9/16;
   background-color: white;
+  margin: 0 auto;
 }
 
 .extendableDiv--iphone_frame_styling {
