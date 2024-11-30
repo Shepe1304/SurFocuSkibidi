@@ -36,10 +36,10 @@ const ExtendableDiv = (props) => {
         </button>
         {brainrot ? (
           <>
-            {/* <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
-              <button>MORE DETAILS!!!</button>
-            </a> */}
-            <a href="https://youtu.be/2qBlE2-WL60" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1wT98__D-JpGC4vRm26vcnyKedqmBbFDl/view?usp=sharing"
+              target="_blank"
+            >
               <button>MORE DETAILS!!!</button>
             </a>
           </>
