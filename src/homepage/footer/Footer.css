@@ -7,6 +7,7 @@
   height: 50px;
   padding-left: 20px;
   line-height: 50px;
+  border-radius: 10px;
 }
 
 .last-section {
@@ -17,7 +18,6 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
   position: relative;
   margin: 20px;
-
 }
 
 footer .link-copy-right {
@@ -37,14 +37,12 @@ footer .link-copy-right a {
 .about-us {
   font-size: 24px;
   font-weight: bold;
-
-
 }
 
 .about-us-content {
   font-size: 15px;
   padding-top: 10px;
-  font-weight: normal; 
+  font-weight: normal;
 }
 
 .contact-us-format {
@@ -63,7 +61,6 @@ footer .link-copy-right a {
 }
 
 .toilet {
-
   position: absolute;
   top: -100px;
   left: 50%;
@@ -81,34 +78,39 @@ footer .link-copy-right a {
   border: none;
   color: white;
   border-radius: 20px;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button-format:hover {
+  box-shadow: 0 0 5px 3px rgba(148, 38, 38, 0.8);
 }
 
 .button-format:active {
-  background-color: #4CAF50; 
+  background-color: #4caf50;
   color: white;
 }
 
 @keyframes shake {
   0% {
-    transform: translateX(0); 
+    transform: translateX(0);
   }
   25% {
-    transform: translateX(-10px); 
+    transform: translateX(-10px);
   }
   50% {
-    transform: translateX(10px); 
+    transform: translateX(10px);
   }
   75% {
-    transform: translateX(-10px); 
+    transform: translateX(-10px);
   }
   100% {
-    transform: translateX(0); 
+    transform: translateX(0);
   }
 }
 
 .icon {
-  width: 150px; 
+  width: 150px;
   height: 150px;
-  animation: shake 0.5s ease-in-out infinite; 
+  animation: shake 0.5s ease-in-out infinite;
 }

@@ -32,20 +32,26 @@ const ExtendableDiv = (props) => {
             }
           }}
         >
-          {!brainrot ? "HELP ME FOCUS!" : "STOP READINGGG"}
+          {!brainrot ? "HELP ME FOCUS!" : "STOP NO MORE"}
         </button>
         {brainrot ? (
           <>
-            {/* <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
-              <button>MORE DETAILS!!!</button>
-            </a> */}
-            <a href="https://youtu.be/2qBlE2-WL60" target="_blank">
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
               <button>MORE DETAILS!!!</button>
             </a>
           </>
         ) : null}
       </div>
       <div className={`extendableDiv--content`}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          Joke #{props.id}
+        </div>
         <div
           className={`extendableDiv--text ${
             brainrot ? "extendableDiv--contract" : ""
