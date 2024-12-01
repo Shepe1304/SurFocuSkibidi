@@ -37,8 +37,8 @@ function Footer() {
             we dont know
           </div>
           <div className = "link-copy-right">
-            <li><a href="/terms">Terms of Service</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.youtube.com/watch?v=z5Hxv4nI6Ow" target="_blank" rel="noopener noreferrer">Terms of Service</a></li>
+            <li><a href="https://www.youtube.com/watch?v=4bMOTTJqGgM" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
           </div>
         </div>
       </div>
