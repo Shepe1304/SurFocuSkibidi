@@ -114,3 +114,9 @@ footer .link-copy-right a {
   height: 150px;
   animation: shake 0.5s ease-in-out infinite;
 }
+
+@media (max-width: 1050px) {
+  .brain-rot {
+    display: none;
+  }
+}

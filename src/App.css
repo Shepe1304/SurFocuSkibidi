@@ -58,7 +58,9 @@
 }
 
 .App--before,
-.App--next {
+.App--next,
+.App--before_mobile,
+.App--next_mobile {
   width: 5em;
   height: 5em;
   margin: auto 0;
@@ -66,25 +68,73 @@
 }
 
 .App--before:hover,
-.App--next:hover {
+.App--next:hover,
+.App--before_mobile:hover,
+.App--next_mobile:hover {
   width: 6em;
   height: 6em;
 }
 
-.App--before:hover {
+.App--before:hover,
+.App--before_mobile:hover {
   margin-right: -1em;
 }
 
-.App--next:hover {
+.App--next:hover,
+.App--next_mobile:hover {
   margin-left: -1em;
 }
 
 .App--before img,
-.App--next img {
+.App--next img,
+.App--before_mobile img,
+.App--next_mobile img {
   width: 100%;
   height: 100%;
 }
 
-.App--next img {
+.App--next img,
+.App--next_mobile img {
   transform: scaleX(-1);
+}
+
+.App--arrows_mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1050px) {
+  .App--jokes {
+    flex-direction: column;
+  }
+
+  .App--jokes > *:nth-child(3),
+  .App--jokes > *:nth-child(4),
+  .App--before,
+  .App--next {
+    display: none;
+  }
+
+  .App--container {
+    flex-direction: column;
+  }
+
+  .App--brainrot_resize {
+    max-width: 100%;
+  }
+
+  .App--brainrot {
+    /* width: 50%; */
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+  }
+
+  .App--brainrot img {
+    width: 100vw;
+    object-fit: cover;
+  }
 }

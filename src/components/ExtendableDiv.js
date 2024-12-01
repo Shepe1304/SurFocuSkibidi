@@ -36,7 +36,11 @@ const ExtendableDiv = (props) => {
         </button>
         {brainrot ? (
           <>
-            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+            <a
+              href="https://youtu.be/dQw4w9WgXcQ"
+              target="_blank"
+              onClick={props.pauseAudio}
+            >
               <button>MORE DETAILS!!!</button>
             </a>
           </>

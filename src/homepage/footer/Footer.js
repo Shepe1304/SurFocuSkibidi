@@ -38,7 +38,11 @@ function Footer() {
             what is "about us" <br />
             we dont know
           </div>
-          <div className="link-copy-right">
+          <div
+            className="link-copy-right"
+            href="https://www.youtube.com/watch?v=2yJgwwDcgV8&t=4s"
+            target="blank_"
+          >
             <li>
               <a
                 href="https://www.youtube.com/watch?v=2yJgwwDcgV8&t=4s"
