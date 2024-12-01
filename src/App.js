@@ -1,11 +1,13 @@
 import "./App.css";
 import ExtendableDiv from "./components/ExtendableDiv";
+
 import React, { useRef, useState } from "react";
 import Header from "./homepage/header/Header";
 import Footer from "./homepage/footer/Footer";
 import { gifList } from "./assets/GifList";
 import { jokes } from "./assets/Jokes";
 import leftArrow from "./assets/images/leftArrow.png";
+
 
 function App() {
   const [brainrot, setBrainrot] = useState(false);
