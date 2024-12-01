@@ -3,21 +3,21 @@
   flex-direction: column;
   margin: 20px;
   gap: 20px;
-  width: 200px;
+  width: 300px;
   height: 50px;
   padding-left: 20px;
   line-height: 50px;
+  border-radius: 10px;
 }
 
 .last-section {
-  background-color: #CD3A3A;
+  background: linear-gradient(#8404a0, #ef6500, #f3047c, #fcab23);
   color: white;
   padding: 30px;
   border-radius: 40px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
   position: relative;
   margin: 20px;
-
 }
 
 footer .link-copy-right {
@@ -37,41 +37,32 @@ footer .link-copy-right a {
 .about-us {
   font-size: 24px;
   font-weight: bold;
-
 }
 
 .about-us-content {
   font-size: 15px;
   padding-top: 10px;
-  font-weight: normal; 
+  font-weight: normal;
 }
 
 .contact-us-format {
-  color: #620000;
+  color: #f3047c;
   font-size: 32px;
   font-weight: bold;
   margin: 20px;
 }
 
-.get-in-touch-format {
-  color: #620000;
-  font-size: 20px;
-  font-weight: normal;
-  margin: 20px;
-}
-
-.christmas-tree {
-  height: 90px;
+.brain-rot {
+  height: 40;
   position: absolute;
-  bottom: -4px;
+  bottom: -100px;
   right: -9px;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.9));
 }
 
-.christmas-bell {
-  height: 80px;
+.toilet {
   position: absolute;
-  top: -60px;
+  top: -100px;
   left: 50%;
   right: 50%;
   transform: translateX(-50%);
@@ -83,9 +74,49 @@ footer .link-copy-right a {
   margin-bottom: 20px;
   height: 40px;
   width: 70px;
-  background-color: #620000;
+  background-color: #f3047c;
   border: none;
   color: white;
   border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 
+.button-format:hover {
+  box-shadow: 0 0 5px 3px rgba(148, 38, 38, 0.8);
+}
+
+.button-format:active {
+  background-color: #4caf50;
+  color: white;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@media (max-width: 1050px) {
+  .brain-rot {
+    display: none;
+  }
 }
