@@ -67,6 +67,11 @@
   cursor: pointer;
 }
 
+.App--before_mobile,
+.App--next_mobile {
+  display: none;
+}
+
 .App--before:hover,
 .App--next:hover,
 .App--before_mobile:hover,
@@ -136,5 +141,10 @@
   .App--brainrot img {
     width: 100vw;
     object-fit: cover;
+  }
+
+  .App--before_mobile,
+  .App--next_mobile {
+    display: block;
   }
 }
