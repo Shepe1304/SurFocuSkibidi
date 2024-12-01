@@ -1,8 +1,8 @@
 import "./App.css";
 import ExtendableDiv from "./components/ExtendableDiv";
 import React, { useState } from "react";
-import Header from "./homepage/header/Header";
-import Footer from "./homepage/footer/Footer";
+import Header from "./homepage/Header/Header";
+import Footer from "./homepage/Footer/Footer";
 
 function App() {
   return (
